@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colors */
+  --color-blue-primary: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-yellow-accent: #facc15;
+  --color-yellow-400: #fbbf24;
+  
+  --color-dark-bg: #0f172a;
+  --color-dark-surface: #1e293b;
+  
+  --color-light-bg: #f8fafc;
+  --color-light-surface: #ffffff;
+
+  /* Fonts */
+  --font-display: 'Inter', sans-serif;
+  
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+@layer base {
+  :root {
+    --bg-primary: var(--color-light-bg);
+    --bg-surface: var(--color-light-surface);
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --accent-glow: rgba(59, 130, 246, 0.1);
+  }
+
+  .dark {
+    --bg-primary: var(--color-dark-bg);
+    --bg-surface: var(--color-dark-surface);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-glow: rgba(59, 130, 246, 0.2);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+    @apply font-display antialiased overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2;
+    background: linear-gradient(135deg, var(--color-blue-primary), var(--color-blue-600));
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
+    transform: translateY(-2px);
+  }
+
+  /* Glassmorphism Variants */
+  .glass-panel {
+    @apply backdrop-blur-xl border transition-all duration-300;
+    background: rgba(255, 255, 255, 0.98);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .glass-panel {
+    background: rgba(30, 41, 59, 0.7);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold mb-12 text-center relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-4 left-1/2 -translate-x-1/2 w-20 h-1 bg-yellow-accent rounded-full;
+  }
+}
