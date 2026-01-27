@@ -55,9 +55,9 @@ const Hero = () => {
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             
-            <button className="px-6 py-3 rounded-full font-bold border border-gray-200 dark:border-white/10 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors flex items-center gap-2">
-              <Download size={18} /> Resume
-            </button>
+            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full font-bold border border-gray-200 dark:border-white/10 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors flex items-center gap-2 cursor-pointer">
+              {t.hero.resume}
+            </a>
           </motion.div>
 
           <motion.div variants={item} className="mt-12 flex items-center gap-6 text-gray-400">

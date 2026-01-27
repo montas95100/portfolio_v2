@@ -11,6 +11,7 @@ export const translations = {
       greeting: "Bonjour, je suis",
       cta1: "Voir mon travail",
       cta2: "Contact",
+      resume: "C.V",
       available: "Disponible"
     },
     sections: {
@@ -156,6 +157,7 @@ export const translations = {
       greeting: "Hello, I am",
       cta1: "View Work",
       cta2: "Contact",
+      resume: "Resume",
       available: "Available"
     },
     sections: {
