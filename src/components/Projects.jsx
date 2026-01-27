@@ -5,40 +5,7 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects = () => {
   const { t } = useApp();
 
-  const projects = [
-    {
-      id: 1,
-      title: "FinTech Dashboard",
-      category: "SaaS Application",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
-      tech: ["Next.js", "Tremor", "PostgreSQL"],
-      size: "col-span-1 md:col-span-2 row-span-2"
-    },
-    {
-      id: 2,
-      title: "AI Image Generator",
-      category: "Machine Learning",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop",
-      tech: ["React", "DALL-E API", "Zustand"],
-      size: "col-span-1"
-    },
-    {
-      id: 3,
-      title: "E-Commerce Mobile App",
-      category: "React Native",
-      image: "https://images.unsplash.com/photo-1512428559087-560fa5ce7d5b?q=80&w=2670&auto=format&fit=crop",
-      tech: ["React Native", "Expo", "Stripe"],
-      size: "col-span-1"
-    },
-    {
-      id: 4,
-      title: "3D Portfolio Template",
-      category: "Open Source",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2670&auto=format&fit=crop",
-      tech: ["Three.js", "R3F", "Blender"],
-      size: "col-span-1 md:col-span-2"
-    }
-  ];
+  const projects = t.projectsData;
 
   return (
     <section id="projects" className="py-20">
@@ -60,7 +27,8 @@ const Projects = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className={`group relative rounded-3xl overflow-hidden cursor-pointer ${project.size}`}
+              onClick={() => window.open(project.link, '_blank')}
+              className="group relative rounded-3xl overflow-hidden cursor-pointer"
             >
               {/* Image & Gradient */}
               <div className="absolute inset-0">

@@ -99,6 +99,53 @@ export const translations = {
         placeholderMessage: "Parlez-moi de votre projet..."
       }
     },
+    projectsData: [
+      {
+        id: 1,
+        title: "Pokedex Project",
+        category: "Dév Web",
+        image: "https://images.unsplash.com/photo-1613771404721-1f92d799e49f?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        tech: ["JavaScript", "HTML/CSS"],
+        description: "Application web interactive consultant l'API PokeAPI pour afficher les statistiques des Pokémon.",
+        link: "https://github.com/montas95100/pokemon"
+      },
+      {
+        id: 2,
+        title: "Projet BDD ESGI",
+        category: "Base de données",
+        image: "https://media.istockphoto.com/id/2148113350/photo/data-center-server-racks-it-modern-hardware-server-room-data-storage-center-database.jpg?s=1024x1024&w=is&k=20&c=uZhP-6i5cyG7mAQg-3Oh6UGIDaCyMJku1HrXOco1iNI=",
+        tech: ["Oracle", "SQL"],
+        description: "Conception et implémentation d'une base de données complexe.",
+        link: "https://github.com/montas95100/bdd"
+      },
+      {
+        id: 3,
+        title: "Badminton Manager",
+        category: "App Desktop",
+        image: "https://images.unsplash.com/photo-1721760886493-61c47c1caec9?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        tech: ["C#", ".NET", "Windows Forms"],
+        description: "Application gérant les équipements informatiques d'un club de badminton (Contexte M2L).",
+        link: "https://github.com/montas95100/Badminton"
+      },
+      {
+        id: 4,
+        title: "Veille Juridique",
+        category: "Documentation",
+        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop",
+        tech: ["Droit", "RGPD"],
+        description: "Dossier de veille juridique réalisé pour le cursus.",
+        link: "https://docs.google.com/document/d/1kRimi76mrLGAb1fzPPgE_PdGy1fqEM02D0xCcHPdPWs/edit?usp=sharing"
+      },
+      {
+        id: 5,
+        title: "Scripting PowerShell",
+        category: "Automatisation",
+        image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=2674&auto=format&fit=crop",
+        tech: ["PowerShell", "Scripting"],
+        description: "Scripts d'automatisation pour l'administration système.",
+        link: "https://docs.google.com/document/d/1fZRU_WAGul_NsairnfR22zT-8w4S1P_cyp1vkjgXx9M/edit?usp=sharing"
+      }
+    ],
     footer: "Conçu & Développé avec passion."
   },
   en: {
@@ -198,6 +245,53 @@ export const translations = {
         placeholderMessage: "Tell me about your project..."
       }
     },
+    projectsData: [
+      {
+        id: 1,
+        title: "Pokedex Project",
+        category: "Web Development",
+        image: "https://images.unsplash.com/photo-1613771404721-1f92d799e49f?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        tech: ["PHP", "HTML/CSS"],
+        description: "Interactive web app using PokeAPI to display Pokemon stats.",
+        link: "https://github.com/montas95100/pokemon"
+      },
+      {
+        id: 2,
+        title: "ESGI DB Project",
+        category: "Database",
+        image: "https://media.istockphoto.com/id/2148113350/photo/data-center-server-racks-it-modern-hardware-server-room-data-storage-center-database.jpg?s=1024x1024&w=is&k=20&c=uZhP-6i5cyG7mAQg-3Oh6UGIDaCyMJku1HrXOco1iNI=",
+        tech: ["Oracle", "SQL"],
+        description: "Design and implementation of a complex database.",
+        link: "https://github.com/montas95100/bdd"
+      },
+      {
+        id: 3,
+        title: "Badminton Manager",
+        category: "Desktop App",
+        image: "https://images.unsplash.com/photo-1721760886493-61c47c1caec9?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        tech: ["C#", ".NET", "Windows Forms"],
+        description: "Desktop app managing IT equipment for a badminton club (M2L Context).",
+        link: "https://github.com/montas95100/Badminton"
+      },
+      {
+        id: 4,
+        title: "Legal Watch",
+        category: "Documentation",
+        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop",
+        tech: ["Law", "GDPR"],
+        description: "Legal watch document produced for the curriculum.",
+        link: "https://docs.google.com/document/d/1kRimi76mrLGAb1fzPPgE_PdGy1fqEM02D0xCcHPdPWs/edit?usp=sharing"
+      },
+      {
+        id: 5,
+        title: "PowerShell Scripting",
+        category: "Automation",
+        image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=2674&auto=format&fit=crop",
+        tech: ["PowerShell", "Scripting"],
+        description: "Automation scripts for system administration.",
+        link: "https://docs.google.com/document/d/1fZRU_WAGul_NsairnfR22zT-8w4S1P_cyp1vkjgXx9M/edit?usp=sharing"
+      }
+    ],
     footer: "Designed & Developed with passion."
   }
 };
