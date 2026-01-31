@@ -7,7 +7,7 @@ export const translations = {
     nav: { home: "Accueil", about: "À propos", work: "Expérience", skills: "Compétences", projects: "Projets", contact: "Contact" },
     hero: {
       role: "Développeur & IT",
-      description: "Profil hybride alliant développement web et opérations IT. Je conçois des solutions digitales robustes et créatives, du code à l'infrastructure.",
+      description: "Profil alliant développement web et opérations IT. Je conçois des solutions digitales robustes et créatives, du code à l'infrastructure.",
       greeting: "Bonjour, je suis",
       cta1: "Voir mon travail",
       cta2: "Contact",
